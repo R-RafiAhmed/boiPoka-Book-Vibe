@@ -1,9 +1,16 @@
+import Navbar from "../Navbar/Navbar";
+import Footer from "../Footer/Footer";
+import { Outlet } from "react-router-dom";
 
 
 const Root = () => {
     return (
         <div>
-            <h2>chander batti jalau re tung tunga tung tung.</h2>
+            <main className="container m-auto">
+                <Navbar></Navbar>
+                <Outlet></Outlet>
+            </main>
+            <Footer></Footer>
         </div>
     );
 };
